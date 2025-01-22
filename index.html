@@ -1,54 +1,91 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!-- the title of the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khadija's Portfolio</title>
+    <!-- Link to Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to Custom Stylesheet -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- Link to special font -->
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
 </head>
 
-<!-- setting the background color of the page -->
-<body bgcolor="LightSkyBlue">
+<body class="min-h-screen flex flex-col">
 
-    <center>
-        <!-- the motivational quote at the top -->
-        <font color="DarkBlue">
-            <h1><em>"It is never too late to be what you might have been."</em></h1>
-        </font>
-        <!-- adding a big image below the quote -->
-        <img src="gallery/photos/blue_abstract_art.jpg" width="900" height="400" aria-label="photo of blue abstract art" />
-        
-        <!-- a welcome subheading -->
-        <h3> Welcome to Khadija's Personal Portfolio</h3>
-    </center>
+    <!-- Primary background section (Header) -->
+    <div class="primary-background">
+        <!-- Header Section -->
+        <header class="text-white py-3">
+            <nav class="flex justify-between items-center px-6">
+                <!-- Portfolio Title -->
+                <a href="#" class="text-2xl font-bold">Khadija's Portfolio</a>
+                <div class="space-x-6 flex flex-wrap justify-center mt-4 lg:mt-0 gap-4 lg:flex-row flex-col items-center">
+                    <!-- Navigation Links -->
+                    <a href="about_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">About Me</a>
+                    <a href="gallery/gallery.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Gallery</a>
+                    <a href="projects.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Projects</a>
+                    <a href="contact_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">Contact Me</a>
+                </div>
+            </nav>
+            <!-- Motivational Quote -->
+            <div class="text-center mt-8">
+                <h1 id="quote" class="text-3xl font-semibold">"It is never too late to be what you might have been."</h1>
+            </div>
+        </header>
+    </div>
 
-    <br><br>
+    <!-- Secondary background section (Main Content) -->
+    <div class="secondary-background">
+        <!-- Main Content Section -->
+        <main class="container mx-auto mt-5 px-4 flex-grow">
+            <section>
+                <!-- Welcome Heading -->
+                <h3 id="welcome-heading" class="text-center text-xl font-semibold mb-4">Welcome to Khadija's Personal Portfolio</h3>
+            </section>
 
-    <!-- heading for the buzzfeed quizzes -->
-    <font color="Navy">
-        <h2>Fun Buzzfeed Quizes</h2>
-    </font>
-    <!-- a list of fun quiz links -->
-    <ul>
-        <li>
-            <a href="https://www.buzzfeed.com/cuteking187/what-simpsons-character-are-you">What "Simpsons" Character Are You?</a>
-        </li>
-        <br>
-        <li>
-            <a href="https://www.buzzfeed.com/brookespieler1/candles-zodiac-sign-can-we-guess-quiz">Guessing Your Zodiac Sign Based on Your Candle Choices</a>
-        </li>
-        <br>
-        <li>
-            <a href="https://www.buzzfeed.com/copperdaisy74/weather-personality-quiz">What Type of Weather Are You?</a>
-        </li>
-    </ul>
+            <!-- Fun Buzzfeed Quizzes Section -->
+            <section class="py-5">
+                <h2 class="text-center heading-accent text-2xl font-bold mb-4">Fun Buzzfeed Quizzes</h2>
+                <!-- Grid for Quiz Links -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- First Quiz Card -->
+                    <div>
+                        <a href="https://www.buzzfeed.com/cuteking187/what-simpsons-character-are-you" class="block text-decoration-none">
+                            <div class="p-6 bg-gray-200 border border-gray-300 rounded-lg text-center">
+                                What "Simpsons" Character Are You?
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Second Quiz Card -->
+                    <div>
+                        <a href="https://www.buzzfeed.com/brookespieler1/candles-zodiac-sign-can-we-guess-quiz" class="block text-decoration-none">
+                            <div class="p-6 bg-gray-200 border border-gray-300 rounded-lg text-center">
+                                Guessing Your Zodiac Sign Based on Your Candle Choices
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Third Quiz Card -->
+                    <div>
+                        <a href="https://www.buzzfeed.com/copperdaisy74/weather-personality-quiz" class="block text-decoration-none">
+                            <div class="p-6 bg-gray-200 border border-gray-300 rounded-lg text-center">
+                               What Type of Weather Are You?
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 
-    <br>
-
-    <!-- links to other pages on the portfolio -->
-    <h3><a href="about_me.html">About Me</a></h3>
-    <h3><a href="gallery/gallery.html">My Gallery</a></h3>
-    <h3><a href="projects.html">My Projects</a></h3>
-    <h3><a href="contact_me.html">Contact Me</a></h3>
+    <!-- Footer Section -->
+    <footer class="text-center py-4 bg-gray-800 text-white mt-auto">
+        <!-- Footer Text -->
+        <p>&copy; 2025 Khadija's Portfolio. All rights reserved.</p>
+    </footer>
 
 </body>
+
 </html>

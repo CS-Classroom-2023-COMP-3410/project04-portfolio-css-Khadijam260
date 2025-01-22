@@ -1,0 +1,32 @@
+.primary-background {
+    background-color: black; /* Black background for primary sections */
+    color: lightgray; /* Light gray text for readability */
+    padding: 20px;
+}
+
+.secondary-background {
+    background-color: white; /* White background for secondary sections */
+    color: black; /* Black text */
+    padding: 20px;
+}
+
+.heading-accent {
+    color:#333
+}
+
+#quote {
+    font-family: 'Dancing Script', cursive; /* Fancy font for the quote */
+    text-align: center;
+    font-size: 2rem;
+    color: lightgray; /* Gray text */
+}
+
+#welcome-heading{
+    text-align: center;
+    color: black; /* Black text for headings */
+}
+
+a {
+    color: lightgray; /* Gray links for consistency */
+    text-decoration: none;
+}

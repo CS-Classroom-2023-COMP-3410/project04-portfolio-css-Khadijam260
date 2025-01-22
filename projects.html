@@ -1,42 +1,63 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- title of the page -->
+    <!-- Title of the page -->
     <title>My Projects</title>
+
+    <!-- Link to external stylesheet and Tailwind CSS CDN -->
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Link to Tailwind CSS -->
 </head>
 
-<!-- setting background color-->
-<body bgcolor="LightSkyBlue">
-        <center>
-            <!-- heading in the center -->
-            <font color="DarkBlue"><h1>My Projects</h1></font>
-        </center>
-        <br>
-        <!-- adding a table for better organization -->
-        <table border="1">
-            <tr>
-                <!-- Column names -->
-                <th><h2>Name</h2></th>
-                <th><h2>Description</h2></th>
-                <th><h2>Languages</h2></th>
-            </tr>
-            <tr>
-                <!-- first project -->
-                <td>Todo App</td>
-                <td>I created a website that allows users to create tasks, send reminders, and add events to their calendars</td>
-                <td>I used HTML, CSS, JS, React, and Node.js</td>
-            </tr>
-            <tr>
-                <!-- second project -->
-                <td>Tic Tac Toe</td>
-                <td>I created a game designed for two users that simulates a game of tic tac toe.</td>
-                <td>I used Java.</td>
-            </tr>
-        </table>
-        <br><br>
+<body class="bg-gray-50"> <!-- Set background color for the page -->
 
-        <!-- links back to the home page -->
-        <a href="index.html">Go back to the home page</a>
+    <!-- Navigation Bar -->
+    <div class="primary-background">
+        <nav class="flex justify-between items-center px-6 py-4">
+            <a href="#" class="text-2xl font-bold">Khadija's Portfolio</a>
+            <div class="flex flex-wrap justify-center gap-4 lg:flex-row flex-col items-center">
+                <a href="about_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">About Me</a>
+                <a href="gallery/gallery.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Gallery</a>
+                <a href="projects.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Projects</a>
+                <a href="contact_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">Contact Me</a>
+            </div>
+        </nav>
+        <!-- Page Heading -->
+        <h1 class="text-4xl text-center font-bold mt-8">My Projects</h1>
+    </div>
+
+    <!-- Table Section for Projects -->
+    <div class="secondary-background py-4">
+        <div class="overflow-x-auto px-6">
+            <!-- Table Container for Project List -->
+            <div class="grid grid-cols-1 gap-4">
+                
+                <!-- Table Header Row -->
+                <div class="grid grid-cols-3 bg-gray-200 p-4 rounded-t-md">
+                    <h2 class="text-lg font-semibold text-gray-700">Name</h2>
+                    <h2 class="text-lg font-semibold text-gray-700">Description</h2>
+                    <h2 class="text-lg font-semibold text-gray-700">Languages</h2>
+                </div>
+
+                <!-- First Project Row -->
+                <div class="grid grid-cols-3 p-4 bg-white border-b border-gray-300">
+                    <p class="text-sm text-gray-800">Todo App</p>
+                    <p class="text-sm text-gray-800">A website that allows users to create tasks, send reminders, and add events to their calendars.</p>
+                    <p class="text-sm text-gray-800">HTML, CSS, JS, React, Node.js</p>
+                </div>
+
+                <!-- Second Project Row -->
+                <div class="grid grid-cols-3 p-4 bg-white">
+                    <p class="text-sm text-gray-800">Tic Tac Toe</p>
+                    <p class="text-sm text-gray-800">A game for two users that simulates tic tac toe gameplay.</p>
+                    <p class="text-sm text-gray-800">Java</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

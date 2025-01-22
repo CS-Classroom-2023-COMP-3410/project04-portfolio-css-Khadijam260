@@ -1,28 +1,49 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!-- title of the page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+    <link rel="stylesheet" href="../custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<!-- setting the background color -->
-<body bgcolor="Lavender">
 
-    <!-- main heading -->
-    <font color="Indigo"><h1>Photo Gallery</h1></font>
+<body>
 
-    <!-- unordered list displaying all the images -->
-    <ul>
-        <li><img src="photos/atlanta_park.jpeg" width="500" aria-label="photo of olympic park in Atlanta, GA"/></li>
-        <li><img src="photos/brooklyn_bridge.jpeg" width="500" aria-label="photo of the brooklyn bridge in NYC"/></li>
-        <li><img src="photos/chicago_night.jpeg" width="500" aria-label="photo of the Chicago river at night"/></li>
-        <li><img src="photos/chicago_river.jpeg" width="500" aria-label="photo of the Chicago river during the day"/></li>
-        <li><img src="photos/london_art.jpeg" width="500" aria-label="photo of an art wall in London"/></li>
-        <li><img src="photos/saudi_sunset.jpeg" width="500" aria-label="photo of the sunset in Saudi Arabia"/></li>
-        <li><img src="photos/seattle_lake.jpeg" width="500" aria-label="photo of a lake in Seattle"/></li>
-        <li><img src="photos/seattle_sunset.jpeg" width="500" aria-label="photo of the sunset in Seattle"/></li>
-    </ul>
+    <!-- Primary background section (Navbar and Heading) -->
+    <div class="primary-background">
+        <!-- Navbar Section -->
+        <nav class="flex justify-between items-center px-6">
+            <a href="#" class="text-2xl font-bold">Khadija's Portfolio</a>
+            <div class="space-x-6 flex flex-wrap justify-center mt-4 lg:mt-0 gap-4 lg:flex-row flex-col items-center">
+                <!-- Navigation Links -->
+                <a href="../index.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">Home</a>
+                <a href="../about_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">About Me</a>
+                <a href="../projects.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Projects</a>
+                <a href="../contact_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">Contact Me</a>
+            </div>
+        </nav>
 
-    <!-- links back to the home page -->
-    <a href="../index.html">Go back to the home page</a>
+        <!-- Main Heading -->
+        <h1 class="text-4xl text-white text-center font-bold mt-8">Photo Gallery</h1>
+    </div>
+
+    <!-- Secondary background section (Image Gallery) -->
+    <div class="secondary-background px-6 py-8">
+        <!-- Image Gallery Section -->
+        <div class="flex flex-wrap justify-center gap-8 mt-8">
+            <img class="w-full max-w-xs aspect-square" src="photos/brooklyn_bridge.jpeg" alt="Image of Brooklyn Bridge" />
+            <img class="w-full max-w-xs aspect-square" src="photos/chicago_night.jpeg" alt="Image of the Chicago river at night" />
+            <img class="w-full max-w-xs aspect-square" src="photos/atlanta_park.jpeg" alt="Image of a park in Atlanta" />
+            <img class="w-full max-w-xs aspect-square" src="photos/chicago_river.jpeg" alt="Image of the Chicago river during the day" />
+            <img class="w-full max-w-xs aspect-square" src="photos/london_art.jpeg" alt="Image of an art wall in London" />
+            <img class="w-full max-w-xs aspect-square" src="photos/saudi_sunset.jpeg" alt="Image of the sunset in Saudi Arabia" />
+            <img class="w-full max-w-xs aspect-square" src="photos/seattle_lake.jpeg" alt="Image of Lake Union in Seattle" />
+            <img class="w-full max-w-xs aspect-square" src="photos/seattle_sunset.jpeg" alt="Image of the sunset in Seattle" />
+        </div>
+    </div>
+
 </body>
+
 </html>

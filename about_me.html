@@ -1,59 +1,75 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!-- title of the webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<!--  background color of the page -->
-<body bgcolor="PowderBlue">
+<body class="bg-light text-dark">
 
-    <center>
-        <!-- picture of me -->
-        <img src="gallery/photos/personal_picture.png" width="400" aria-label="photo of Khadija Mohamed"/>
-        <font color="CadetBlue">
-            <!-- title of the page -->
-            <h1>About Me</h1>
+    <!-- Primary background section (Navbar and About Me Heading) -->
+    <div class="primary-background">
+        <!-- Navbar Section -->
+        <nav class="flex justify-between items-center px-6">
+            <a href="#" class="text-2xl font-bold">Khadija's Portfolio</a>
+            <div class="space-x-6 flex flex-wrap justify-center mt-4 lg:mt-0 gap-4 lg:flex-row flex-col items-center">
+                <a href="index.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">Home</a>
+                <a href="gallery/gallery.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Gallery</a>
+                <a href="projects.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">My Projects</a>
+                <a href="contact_me.html" class="text-base hover:text-white bg-gray-700 px-4 py-2 rounded-md hover:bg-gray-600">Contact Me</a>
+            </div>
+        </nav>
 
-        </font>
-    </center>
+        <!-- About Me Content Section -->
+        <div class="text-center py-8">
+            <div class="flex justify-center">
+                <img src="gallery/photos/personal_picture.png" width="400" alt="photo of Khadija Mohamed" class="rounded-lg mb-6" />
+            </div>
+            <h1 class="text-4xl text-white font-semibold">About Me</h1>
+        </div>
+    </div>
 
-    <!-- my introduction -->
-    <p>
-        I'm Khadija Mohamed, a student at the University of Denver. I'm currently a senior and I'm majoring in Computer Science with minors in Business Administration and Mathematics. At the University of Denver, I'm involved on my campus by participating in groups and organizations such as serving as the President of the NSBE chapter, currently the secretary for MSA, and I am a scholar of the ESTEM program.
-    </p>
+    <!-- Secondary background section (Main Content) -->
+    <div class="secondary-background">
+        <div class="bg-white p-6">
+            <p class="text-lg mb-4">
+                I'm Khadija Mohamed, a student at the University of Denver. I'm currently a senior majoring in Computer Science with minors in Business Administration and Mathematics. At the University of Denver, I'm actively involved in various groups and organizations, such as serving as the President of the NSBE chapter, being the secretary for MSA, and participating as a scholar of the ESTEM program.
+            </p>
 
-    <p>
-        My future goal is to use my education and skills to help people, whether that's through software or in other creative ways.
-    </p>
+            <p class="text-lg mb-4">
+                My future goal is to use my education and skills to help people, whether through software or other creative solutions.
+            </p>
 
-    <!-- skills heading -->
-    <font color="CadetBlue">
-        <h3> My Skills</h3>
-    </font>
-    <!-- Uuordered list of my programming langs -->
-    <ul>
-        <li>Java</li>
-        <li>Python</li>
-        <li>C</li>
-        <li>C++</li>
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
+            <!-- Skills Section -->
+            <h3 class="font-bold text-2xl mb-4">My Skills</h3>
+            <ul class="list-none space-y-2">
+                <li class="text-lg">Java</li>
+                <li class="text-lg">Python</li>
+                <li class="text-lg">C</li>
+                <li class="text-lg">C++</li>
+                <li class="text-lg">HTML</li>
+                <li class="text-lg">CSS</li>
+            </ul>
 
-    <!-- my hobbies -->
-    <p>
-        Some hobbies of mine include traveling, trying new restaurants and cafes, making candles, listening to true crime podcasts, and baking.
-    </p>
-    <p>
-        A hobby that I recently started to gain interest in is photography.
-    </p>
+            <br>
 
-    <!-- link to my photo gallery -->
-    <a href="gallery/gallery.html"> Take a look at my photo gallery! </a>
-    <br><br>
-    <!-- link back to the homepage -->
-    <a href="index.html"> Go back to the home page. </a>
+            <!-- Hobbies Section -->
+            <p class="text-lg mb-4">
+                Some hobbies of mine include traveling, trying new restaurants and cafes, making candles, listening to true crime podcasts, and baking.
+            </p>
+            <p class="text-lg mb-6">
+                A hobby that I recently started to gain interest in is photography.
+            </p>
+
+            <!-- Link to Photo Gallery -->
+            <a href="gallery/gallery.html" class="inline-block px-6 py-3 border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white rounded-lg">Take a look at my photo gallery!</a>
+        </div>
+    </div>
+
 </body>
+
 </html>
